@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: white;
     color:whitesmoke;
     font-size:24px;
     font-family: "Kode Mono", monospace;
@@ -12,18 +12,18 @@ a:visited{
     color:white;
 }
 a:hover{
-    color:rgb(255, 159, 159);
+    color:rgb(128, 35, 35);
 }
 h1{
     font-family: "Montserrat Subrayada", sans-serif;
-    background-color:firebrick;
+    background-color:rgb(128, 35, 35);
     padding: 10px;
     font-size:50px;
     text-align: center;
 }
 h1:hover{
     background-color:black;
-    color:firebrick;
+    color:rgb(128, 35, 35);
     padding: 10px;
     transition: 1s;
 }
@@ -32,7 +32,7 @@ h1:hover{
     background-image: url(header.png);
     width: fill;
     font-family: "Montserrat Subrayada", sans-serif;
-    color:firebrick;
+    color:rgb(128, 35, 35);
     padding: 50px;
     font-size: 70px;
     text-align: center;
@@ -51,7 +51,7 @@ header:hover{
     background-color: rgb(33, 41, 63);
   }
 .dropbtn:hover{
-    color: rgb(255, 159, 159);
+    color: rgb(128, 35, 35);
     font-family: "Kode Mono", monospace;
     font-size: 24px;
     text-decoration:underline;
@@ -76,20 +76,44 @@ header:hover{
     text-decoration: none;
     display: block;
   }
-  .dropdown-content a:hover {color: firebrick;}
+  .dropdown-content a:hover {color: rgb(128, 35, 35);}
   .dropdown:hover .dropdown-content {display: block;}
 
 .footer{
     background-image: url(header.png);
-    position:absolute;
-    width: fill;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
+    position:fixed;
+    bottom:0;
+    left: 8px;
+    right:8px;
+    padding: 30px;
     text-align: center;
     color:white;
     font-family: "Montserrat Subrayada", sans-serif;
+
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    justify-content:space-around;
+}
+.sidebarartworks{
+    background-color:rgba(128, 35, 35, 0.334);
+    width: 130px;
+    margin:0;
+    display: flex;
+    position:fixed;
+    bottom:0;
+    left: 8px;
+    top:8px;
+}
+.sidebarabout{
+    background-color: rgba(35, 68, 128, 0.334);
+    width: 130px;
+    margin:0;
+    display: flex;
+    position:fixed;
+    bottom:0;
+    left: 8px;
+    top:8px;
 }
 mark{
     background-color: rgb(33, 41, 63); 
@@ -101,9 +125,41 @@ mark{
 }
 mark:hover{
     background-color: white; 
-    color:firebrick; 
+    color:rgb(128, 35, 35); 
     padding-left: 20px; 
     padding-right:20px; 
     padding-top:4px;
     padding-bottom:4px;
+}
+video {
+    position: absolute;
+    top: 350;
+    left: 195;
+    width:370px;
+    z-index:-100;
+  }
+  .video1 {
+    position: absolute;
+    top: 350;
+    left: 795;
+    z-index:-100;
+  }
+
+
+.navigation{
+    background-color:rgb(33, 41, 63);
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    justify-content:space-around;
+  }
+
+.home{
+    padding: 15px;
+}
+.about{
+    padding: 15px;
+}
+.dropdown{
+    padding: 15px;
 }

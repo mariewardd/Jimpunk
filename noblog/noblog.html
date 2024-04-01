@@ -16,71 +16,216 @@
 </head>
 <body>
     <header
-    class="header">jimpunk</header>
+        class="header">jimpunk</header>
+
+
+        <nav class="navigation">
+            <nav class="home"> <a href="../index.html">HOME</a></nav>
+            <nav class="about"> <a href="../about/about.html">ABOUT</a></nav>
+            <div class="dropdown">
+                <button class="dropbtn">ARTWORKS</button>
+                <div class="dropdown-content">
+                  <a href="../dysleksic/dysleksic.html">Dysleksic</a>
+                  <a href="../screenfull/screenfull.html">Screenfull</a>
+                  <a href="../noblog/noblog.html">NoBlog</a>
+                </div>
+        </nav>
+
+
+    <div class="sidebarartworks"></div>
+
+
 
     <style>
-.container{
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat (10, 1fr);
-    grid-template-rows: repeat (12, 1fr);
-    background-color:rgb(33, 41, 63);
-}
-.home{
-    padding: 15px;
-    grid-row: 1;
-    grid-column: 2;
-    background-color:rgb(33, 41, 63);
-}
-.about{
-    padding: 15px;
-    grid-row: 1;
-    grid-column: 5;
-    background-color:rgb(33, 41, 63);
-}
-.dropdown{
-    padding: 15px;
-    grid-row: 1;
-    grid-column: 8;
-    background-color:rgb(33, 41, 63);
-}
+        .container{
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat (10, 1fr);
+            grid-template-rows: repeat (8, 12.5%);
+            justify-content: flex-start;
+        }
+        .extra{
+            grid-column:1;
+            grid-row:1;
+            width:130px;
+        }
+        .extra2{
+            grid-column:1;
+            grid-row:7;
+            height:130px;
+        }
+        .extra3{
+            grid-column:3;
+            grid-row:7;
+            width:20px;
+        }
+        .title{
+            font-size:60px;
+            font-family: "Kode Mono", monospace;
+            color: rgb(128, 35, 35);
+            grid-column:2;
+            grid-row:1;
+            width:350px;
+            justify-content:center;
+            padding-left:20px;
+            padding-top:20px;
+            padding-right:52px;
+    
+        }
+        .descrip{
+            font-size:12px;
+            font-family: "Kode Mono", monospace;
+            color: rgb(128, 35, 35);
+            padding-top:10px;
+        }
+        .links{
+            font-size:9px;
+            font-family: "Kode Mono", monospace;
+            color: rgba(128, 35, 35, 0.334);
+            padding-left:20px;
+            grid-column:2;
+            grid-row:1;
+            padding-top:360px;
+        }
+        .squares{
+            display:grid;
+            grid-column:3;
+            grid-row:1;
+            grid-template-columns: repeat (10, 1fr);
+            grid-template-rows: repeat (3, 1fr);
+            justify-content: flex-start;
+        }
+        .square1{
+            background-image: url(../noblog/noblogsc.png);
+            background-size: cover;
+            grid-column:4;
+            grid-row: 1;
+            width: 150px;
+            height: 160px;
+            box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.089);
+
+        }
+        .square2{
+            background-image: url(../noblog/noblogsc.png);
+            background-size: cover;
+            grid-column:5;
+            grid-row: 2;
+            width: 150px;
+            height: 160px;
+            box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.159);
+
+        }
+        .square3{
+            background-image: url(../noblog/noblogsc.png);
+            background-size: cover;
+            grid-column:4;
+            grid-row: 3;
+            width: 150px;
+            height: 160px;
+            box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.159);
+
+        }
+        .square4{
+            background-image: url(../noblog/noblogsc.png);
+            background-size: cover;
+            grid-column:6;
+            grid-row: 1;
+            width: 150px;
+            height: 160px;
+            box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.159);
+
+        }
+        .square5{
+            background-image: url(../noblog/noblogsc.png);
+            background-size: cover;
+            grid-column:6;
+            grid-row: 3;
+            width: 150px;
+            height: 160px;
+            box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.159);
+
+        }
+        .square6{
+            background-image: url(../noblog/noblogsc.png);
+            background-size: cover;
+            grid-column:7;
+            grid-row: 2;
+            width: 150px;
+            height: 160px;
+            box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.159);
+
+        }
+        .square7{
+            background-image: url(../noblog/noblogsc.png);
+            background-size: cover;
+            grid-column:8;
+            grid-row: 1;
+            width: 150px;
+            height: 160px;
+            box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.159);
+
+        }
+        .square8{
+            background-image: url(../noblog/noblogsc.png);
+            background-size: cover;
+            grid-column:8;
+            grid-row: 3;
+            width: 150px;
+            height: 160px;
+            box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.159);
+
+        }
+        .square9{
+            background-image: url(../noblog/noblogsc.png);
+            background-size: cover;
+            grid-column:9;
+            grid-row: 2;
+            width: 150px;
+            height: 160px;
+            box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.159);
+
+        }
     </style>
-
+    
     <div class="container">
-        <nav class="home"> <a href="../index.html">Home</a></nav>
-        <nav class="about"> <a href="../about/about.html">About</a></nav>
-        <div class="dropdown">
-            <button class="dropbtn">Artworks</button>
-            <div class="dropdown-content">
-              <a href="../dysleksic/dysleksic.html">Dysleksic</a>
-              <a href="../screenfull/screenfull.html">Screenfull</a>
-              <a href="../noblog/noblog.html">NoBlog</a>
+        <div class="title">NoBlog<br>2003 <br><p class="descrip">Jimpunk originally founded noblog on the Blogger platform with a group of European artists in 2003. The blog, much like most of Jimpunk’s works, plays on the aesthetic of breaking things: starting file downloads, simulating errors, playing many sounds at once, and using unmanageable gigantic fonts. They can be considered as a missing link between earlier net art like JODI and later surf and art clubs.</p></div>
+            <div class="links">LINKS <br><br>https://jimpunk.blogspot.com<br>http://www.jimpunk.com/<br>https://twitter.com/llllll__lllllll?lang=en</div>
+            <div class="squares">
+                <div class="square1" ></div>
+                <div class="square1"></div>
+                <div class="square2"></div>
+                <div class="square3"></div>
+                <div class="square4"></div>
+                <div class="square5"></div>
+                <div class="square6"></div>
+                <div class="square7"></div>
+                <div class="square8"></div>
+                <div class="square9"></div>
+                <div class="square10"></div>
             </div>
-            <div class="navigation"></div> </div>
-
-            <div class="checkered"> 
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
-                <div class="four"></div>
-                <div class="five"></div>
-                <div class="six"></div>
-            </div>    
+    
+    
+        
+    
+        <div class="extra"></div>
+        <div class="extra2"></div>
+        <div class="extra3"></div>
+        <div class="extra4"></div>
+    
+    
+    
+    
+    
     </div>
-    <br>
+    
+    
+    
+    
+    <footer class="footer">
+        <mark>Marie Ward</mark>
+    
+    
+        </body>
 
-</body>
-<div class="checkered"> 
-    <div class="one"></div>
-    <div class="two"></div>
-    <div class="three"></div>
-    <div class="four"></div>
-    <div class="five"></div>
-    <div class="six"></div>
-</div>
-
-<footer class="footer">
-<mark>Marie Ward</mark>
-</footer>
 </body>
 </html>
