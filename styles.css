@@ -168,6 +168,9 @@ video {
 
 @media screen and (max-width:600px){
     
+    .sidebarabout{
+        display: none;
+    }
     .aboutcontainer{
         overflow:scroll;
         scale:85%;
@@ -183,7 +186,7 @@ video {
         height: 500px;
         width: 550px;
         background-size: cover;
-        background-image: url(../jimpunkgif.gif);
+        background-image: url(/about/jimpunkaboutpic.png);
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.407);
     }
     .jimpunkpic:hover{
@@ -193,8 +196,8 @@ video {
         height: 500px;
         width: 550px;
         background-size: cover;
-        background-image: url(../jimpunkgif.gif);
-        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.407);
+        background-image: url(/about/jimpunkaboutpic.png);
+        box-shadow: 20px 20px 5px 5px rgba(0, 0, 0, 0.407);
     }
 
     .biography3{
@@ -227,6 +230,9 @@ video {
     .video1{
         display:none;
     }
+    video{
+        display:none;
+    }
 }
 
 
@@ -235,6 +241,9 @@ video {
 @media screen and (min-width:600px) and (max-width:1024px){
     
 
+    .sidebarabout{
+        display: none;
+    }
     .aboutcontainer{
         overflow:scroll;
         scale:85%;
@@ -243,7 +252,36 @@ video {
         display: none;
 
     }
+    .jimpunkpic{
+        grid-column: 3 / 6;
+        grid-row: 6 / 8;
+        scale: 80%;
+        height: 600px;
+        width: 650px;
+        background-size: cover;
+        background-image: url(/about/jimpunkaboutpic.png);
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.407);
+    }
+    .jimpunkpic:hover{
+        grid-column: 3 / 6;
+        grid-row: 6 / 8;
+        scale: 80%;
+        height: 500px;
+        width: 550px;
+        background-size: cover;
+        background-image: url(/about/jimpunkaboutpic.png);
+        box-shadow: 20px 20px 5px 5px rgba(0, 0, 0, 0.407);
+    }
 
+    .biography3{
+        display:none;
+    }
+    .biography4{
+        display:none;
+    }
+
+
+    
     .sidebarartworks{
         display: none;
     }
