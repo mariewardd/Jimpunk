@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,233 +9,271 @@
     <link rel="stylesheet" href="../styles.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap"
+        rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Montserrat+Subrayada:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Montserrat+Subrayada:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .aboutcontainer {
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat (10, 1fr);
+            grid-template-rows: repeat (8, 12.5%);
+        }
+
+        .biography1 {
+            grid-column: 3;
+            font-size: 40px;
+            padding: 0px;
+            grid-row: 2;
+            animation-name: biographyOne;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+        }
+
+        .biography2 {
+            color: rgba(128, 35, 35, 0.334);
+            grid-column: 4;
+            grid-row: 1;
+            font-size: 40px;
+            padding: 0px;
+            animation-name: biographyTwo;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+        }
+
+        .biography3 {
+            color: rgba(35, 68, 128, 0.334);
+            grid-column: 6;
+            grid-row: 2;
+            font-size: 40px;
+            padding: 0px;
+            animation-name: biographyThree;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+
+        }
+
+        .biography4 {
+            color: rgba(128, 35, 35, 0.334);
+            grid-column: 7;
+            grid-row: 1;
+            font-size: 40px;
+            padding: 0px;
+            animation-name: biographyFour;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+
+        }
+
+        @keyframes biographyOne {
+            0% {
+                color: rgba(35, 68, 128, 0.613);
+            }
+
+            50% {
+                color: rgba(128, 35, 35, 0.577);
+            }
+
+            70% {
+                color: rgba(128, 35, 35, 0.577);
+            }
+
+            100% {
+                color: rgba(35, 68, 128, 0.613);
+            }
+        }
+
+        @keyframes biographyTwo {
+            0% {
+                color: rgba(128, 35, 35, 0.577);
+            }
+
+            50% {
+                color: rgba(35, 68, 128, 0.613);
+            }
+
+            70% {
+                color: rgba(35, 68, 128, 0.613);
+            }
+
+            100% {
+                color: rgba(128, 35, 35, 0.577);
+            }
+        }
+
+        @keyframes biographyThree {
+            0% {
+                color: rgba(35, 68, 128, 0.613);
+            }
+
+            50% {
+                color: rgba(128, 35, 35, 0.577);
+            }
+
+            70% {
+                color: rgba(128, 35, 35, 0.577);
+            }
+
+            100% {
+                color: rgba(35, 68, 128, 0.613);
+            }
+        }
+
+        @keyframes biographyFour {
+            0% {
+                color: rgba(128, 35, 35, 0.577);
+            }
+
+            50% {
+                color: rgba(35, 68, 128, 0.613);
+            }
+
+            70% {
+                color: rgba(35, 68, 128, 0.613);
+            }
+
+            100% {
+                color: rgba(128, 35, 35, 0.577);
+            }
+        }
+
+        .quote {
+            color: rgb(128, 35, 35);
+            grid-column: 5;
+            grid-row: 1;
+            height: fit-content;
+            width: 350px;
+            text-align: center;
+            padding: 15px;
+            text-shadow: 2px 1px rgba(128, 35, 35, 0.334);
+
+        }
+
+        .line {
+            background-color: rgba(35, 68, 128, 0.334);
+            grid-column: 2 / 10;
+            grid-row: 3;
+            padding: 2px;
+            margin-bottom: 25px;
+            margin-top: 15px;
+
+        }
+
+        .paragraph {
+            color: rgba(35, 68, 128, 0.693);
+            grid-column: 3 / 6;
+            grid-row: 4;
+            height: 420px;
+            width: 700px;
+
+        }
+
+        .jimpunkpic {
+            grid-column: 6 / 9;
+            grid-row: 4;
+            background-image: url(../jimpunkgif.gif);
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.407);
+
+        }
+
+        .jimpunkpic:hover {
+            grid-column: 6 / 9;
+            grid-row: 4;
+            background-image: url(../jimpunkgif.gif);
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.416);
+        }
+
+        .blank1 {
+            grid-column: 1;
+            grid-row: 1;
+            width: 150px;
+        }
+
+        .blank2 {
+            grid-column: 1 / 6;
+            grid-row: 8 / 9;
+            height: 150px;
+        }
+
+        .blank3 {
+            grid-column: 10;
+            grid-row: 1;
+            width: 10px;
+        }
+    </style>
 
 </head>
+
 <body>
-    <header
-        class="header">jimpunk</header>
+    <header class="header">jimpunk</header>
 
 
-        <nav class="navigation">
-            <nav class="home"> <a href="../index.html">HOME</a></nav>
-            <nav class="about"> <a href="../about/about.html">ABOUT</a></nav>
-            <div class="dropdown">
-                <button class="dropbtn">ARTWORKS</button>
-                <div class="dropdown-content">
-                  <a href="../dysleksic/dysleksic.html">Dysleksic</a>
-                  <a href="../screenfull/screenfull.html">Screenfull</a>
-                  <a href="../noblog/noblog.html">NoBlog</a>
-                </div>
-        </nav>
-
-
-        <div class="sidebarabout"></div>
-
-        <video class="videoabout" autoplay muted loop>
-            <source src="giphy.mp4" type="video/mp4">
-          </video>
-
-<style>
-    .aboutcontainer{
-        display: grid;
-        width: 100%;
-        grid-template-columns: repeat (10, 1fr);
-        grid-template-rows: repeat (8, 12.5%);
-    }
-    .biography1{
-        grid-column:3;
-        font-size:40px;
-        padding:0px;
-        grid-row:2;
-        animation-name: biographyOne;
-        animation-iteration-count:infinite;
-        animation-duration:3s;
-    }
-
-    .biography2{
-        color: rgba(128, 35, 35, 0.334);
-        grid-column:4;
-        grid-row:1;
-        font-size:40px;
-        padding:0px;
-        animation-name: biographyTwo;
-        animation-iteration-count:infinite;
-        animation-duration:3s;
-        animation-timing-function:linear;
-    }
-    .biography3{
-        color: rgba(35, 68, 128, 0.334);
-        grid-column:6;
-        grid-row:2;
-        font-size:40px;
-        padding:0px;
-        animation-name: biographyThree;
-        animation-iteration-count:infinite;
-        animation-duration:3s;
-        animation-timing-function:linear;
-
-    }
-    .biography4{
-        color: rgba(128, 35, 35, 0.334);
-        grid-column:7;
-        grid-row:1;
-        font-size:40px;
-        padding:0px;
-        animation-name: biographyFour;
-        animation-iteration-count:infinite;
-        animation-duration:3s;
-        animation-timing-function:linear;
-
-    }
-    @keyframes biographyOne{
-        0%{
-            color: rgba(35, 68, 128, 0.613);
-        }
-        50%{
-            color: rgba(128, 35, 35, 0.577);
-        }
-        70%{
-            color: rgba(128, 35, 35, 0.577);
-        }
-        100%{
-            color: rgba(35, 68, 128, 0.613);
-        }
-    }
-    @keyframes biographyTwo{
-        0%{
-            color: rgba(128, 35, 35, 0.577);
-        }
-        50%{
-            color: rgba(35, 68, 128, 0.613);
-        }
-        70%{
-            color: rgba(35, 68, 128, 0.613);
-        }
-        100%{
-            color: rgba(128, 35, 35, 0.577);
-        }
-    }
-    @keyframes biographyThree{
-        0%{
-            color: rgba(35, 68, 128, 0.613);
-        }
-        50%{
-            color: rgba(128, 35, 35, 0.577);
-        }
-        70%{
-            color: rgba(128, 35, 35, 0.577);
-        }
-        100%{
-            color: rgba(35, 68, 128, 0.613);
-        }
-    }
-    @keyframes biographyFour{
-        0%{
-            color: rgba(128, 35, 35, 0.577);
-        }
-        50%{
-            color: rgba(35, 68, 128, 0.613);
-        }
-        70%{
-            color: rgba(35, 68, 128, 0.613);
-        }
-        100%{
-            color: rgba(128, 35, 35, 0.577);
-        }
-    }
-
-    .quote{
-        color: rgb(128, 35, 35);
-        grid-column:5;
-        grid-row:1;
-        height:fit-content;
-        width: 350px;
-        text-align:center;
-        padding:15px;
-        text-shadow: 2px 1px rgba(128, 35, 35, 0.334);
-
-    }
-    .line{
-        background-color:rgba(35, 68, 128, 0.334);
-        grid-column: 2 / 10;
-        grid-row: 3;
-        padding: 2px;
-        margin-bottom: 25px;
-        margin-top: 15px;
-
-    }
-    .paragraph{
-        color: rgba(35, 68, 128, 0.693);
-        grid-column: 3 / 6;
-        grid-row: 4;
-        height: 420px;
-        width: 700px;
-
-    }
-    .jimpunkpic{
-        grid-column: 6 / 9;
-        grid-row: 4;
-        background-image: url(../jimpunkgif.gif);
-        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.407);
-
-    }
-    .jimpunkpic:hover{
-        grid-column: 6 / 9;
-        grid-row: 4;
-        background-image: url(../jimpunkgif.gif);
-        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.416);
-    }
-    .blank1{
-        grid-column:1;
-        grid-row:1;
-        width: 150px;
-    }
-    .blank2{
-        grid-column:1 / 6;
-        grid-row: 8 / 9;
-        height: 150px;
-    }
-    .blank3{
-        grid-column:10;
-        grid-row: 1;
-        width: 10px;
-    }
-    
-
-</style>
-
-        <div class="aboutcontainer">
-            <div class="biography1">BIOGRAPHY</div>
-            <div class="biography2">BIOGRAPHY</div>
-            <div class="biography3">BIOGRAPHY</div>
-            <div class="biography4">BIOGRAPHY</div>
-            <div class="quote">“Jimpunk is great in that you say let’s do this, and he’s like a machine. He just starts doing it.” <br>
-                - Antonio Mendoza</div>
-    
-            <div class="line"></div>
-    
-            <div class="paragraph">Jimpunk is an anonymous French Artist going by the pseudonym Jimpunk. A well respected net artist who takes surrealist techniques and punk styles in their websites and art. Jimpunk uses datamoshing, data culture, collage, and a lot of stimulating images, sounds, and videos to entice the viewer into the various websites that they've created. The anonymity of Jimpunk only adds to the concept of their online art. Many of their pieces such as Screenfull and Dysleksic (yes, that is how it is spelled) are similar to what a computer virus might look like with the loud, clashing noises and ovverlapping collage style.
+    <nav class="navigation">
+        <nav class="home"> <a href="../index.html">HOME</a></nav>
+        <nav class="about"> <a href="../about/about.html">ABOUT</a></nav>
+        <div class="dropdown">
+            <button class="dropbtn">ARTWORKS</button>
+            <div class="dropdown-content">
+                <a href="../dysleksic/dysleksic.html">Dysleksic</a>
+                <a href="../screenfull/screenfull.html">Screenfull</a>
+                <a href="../noblog/noblog.html">NoBlog</a>
             </div>
-    
-            <div class="jimpunkpic"></div>
-
-            <div class="blank1"></div>
-            <div class="blank2"></div>
-            <div class="blank3"></div>
+    </nav>
 
 
+    <div class="sidebarabout"></div>
 
-            
+    <video class="videoabout" autoplay muted loop>
+        <source src="giphy.mp4" type="video/mp4">
+    </video>
 
 
-<footer class="footer">
-    <mark>Marie Ward</mark>
+
+    <div class="aboutcontainer">
+        <div class="biography1">BIOGRAPHY</div>
+        <div class="biography2">BIOGRAPHY</div>
+        <div class="biography3">BIOGRAPHY</div>
+        <div class="biography4">BIOGRAPHY</div>
+        <div class="quote">“Jimpunk is great in that you say let’s do this, and he’s like a machine. He just starts
+            doing it.” <br>
+            - Antonio Mendoza</div>
+
+        <div class="line"></div>
+
+        <div class="paragraph">Jimpunk is an anonymous French Artist going by the pseudonym Jimpunk. A well respected
+            net artist who takes surrealist techniques and punk styles in their websites and art. Jimpunk uses
+            datamoshing, data culture, collage, and a lot of stimulating images, sounds, and videos to entice the viewer
+            into the various websites that they've created. The anonymity of Jimpunk only adds to the concept of their
+            online art. Many of their pieces such as Screenfull and Dysleksic (yes, that is how it is spelled) are
+            similar to what a computer virus might look like with the loud, clashing noises and ovverlapping collage
+            style.
+        </div>
+
+        <div class="jimpunkpic"></div>
+
+        <div class="blank1"></div>
+        <div class="blank2"></div>
+        <div class="blank3"></div>
+        </div>
+
+
+
+
+
+        <footer class="footer">
+            <mark>Marie Ward</mark>
+        </footer>
 
 
 </body>
+
 </html>
