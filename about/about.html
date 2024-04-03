@@ -47,33 +47,107 @@
         grid-template-rows: repeat (8, 12.5%);
     }
     .biography1{
-        color: rgba(35, 68, 128, 0.334);
         grid-column:3;
+        font-size:40px;
+        padding:0px;
         grid-row:2;
-        padding:15px;
+        animation-name: biographyOne;
+        animation-iteration-count:infinite;
+        animation-duration:3s;
     }
 
     .biography2{
         color: rgba(128, 35, 35, 0.334);
         grid-column:4;
         grid-row:1;
-        padding:15px;
-
+        font-size:40px;
+        padding:0px;
+        animation-name: biographyTwo;
+        animation-iteration-count:infinite;
+        animation-duration:3s;
+        animation-timing-function:linear;
     }
     .biography3{
         color: rgba(35, 68, 128, 0.334);
         grid-column:6;
         grid-row:2;
-        padding:15px;
+        font-size:40px;
+        padding:0px;
+        animation-name: biographyThree;
+        animation-iteration-count:infinite;
+        animation-duration:3s;
+        animation-timing-function:linear;
 
     }
     .biography4{
         color: rgba(128, 35, 35, 0.334);
         grid-column:7;
         grid-row:1;
-        padding:15px;
+        font-size:40px;
+        padding:0px;
+        animation-name: biographyFour;
+        animation-iteration-count:infinite;
+        animation-duration:3s;
+        animation-timing-function:linear;
 
     }
+    @keyframes biographyOne{
+        0%{
+            color: rgba(35, 68, 128, 0.613);
+        }
+        50%{
+            color: rgba(128, 35, 35, 0.577);
+        }
+        70%{
+            color: rgba(128, 35, 35, 0.577);
+        }
+        100%{
+            color: rgba(35, 68, 128, 0.613);
+        }
+    }
+    @keyframes biographyTwo{
+        0%{
+            color: rgba(128, 35, 35, 0.577);
+        }
+        50%{
+            color: rgba(35, 68, 128, 0.613);
+        }
+        70%{
+            color: rgba(35, 68, 128, 0.613);
+        }
+        100%{
+            color: rgba(128, 35, 35, 0.577);
+        }
+    }
+    @keyframes biographyThree{
+        0%{
+            color: rgba(35, 68, 128, 0.613);
+        }
+        50%{
+            color: rgba(128, 35, 35, 0.577);
+        }
+        70%{
+            color: rgba(128, 35, 35, 0.577);
+        }
+        100%{
+            color: rgba(35, 68, 128, 0.613);
+        }
+    }
+    @keyframes biographyFour{
+        0%{
+            color: rgba(128, 35, 35, 0.577);
+        }
+        50%{
+            color: rgba(35, 68, 128, 0.613);
+        }
+        70%{
+            color: rgba(35, 68, 128, 0.613);
+        }
+        100%{
+            color: rgba(128, 35, 35, 0.577);
+        }
+    }
+
     .quote{
         color: rgb(128, 35, 35);
         grid-column:5;
