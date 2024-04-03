@@ -163,3 +163,140 @@ video {
 .dropdown{
     padding: 15px;
 }
+
+
+
+@media screen and (max-width:600px){
+    
+    .sidebarabout{
+        display: none; 
+    }
+    .aboutcontainer{
+        overflow:scroll;
+        scale:85%;
+    }
+    .blank1{
+        display: none;
+
+    }
+    .jimpunkpic{
+        grid-column: 3 / 6;
+        grid-row: 6 / 8;
+        scale:70%;
+        background-image: url(../jimpunkgif.gif);
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.407);
+    }
+    .jimpunkpic:hover{
+        display:none;
+    }
+    .footer{
+        background-image: url(header.png);
+        position:fixed;
+        bottom:0;
+        left: 8px;
+        right:8px;
+        width:950px;
+        padding: 30px;
+        text-align: center;
+        color:white;
+        font-family: "Montserrat Subrayada", sans-serif;
+    
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+        justify-content:space-around;
+    }
+
+
+
+
+
+    .sidebarartworks{
+        display: none;
+    }
+    .extra{
+        display:none;
+    }
+    .container{
+        overflow:hidden;
+    }
+
+
+
+
+    .homecontainer{
+        overflow:hidden;
+    }
+    .video1{
+        display:none;
+    }
+}
+
+
+
+
+@media screen and (min-width:600px) and (max-width:1024px){
+    
+    .sidebarabout{
+        display: none; 
+    }
+    .aboutcontainer{
+        overflow:scroll;
+        scale:85%;
+    }
+    .blank1{
+        display: none;
+
+    }
+    .jimpunkpic{
+        grid-column: 3 / 6;
+        grid-row: 6 / 8;
+        scale:70%;
+        background-image: url(../jimpunkgif.gif);
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.407);
+    }
+    .jimpunkpic:hover{
+        display:none;
+    }
+    .footer{
+        background-image: url(header.png);
+        position:fixed;
+        bottom:0;
+        left: 8px;
+        right:8px;
+        width:950px;
+        padding: 30px;
+        text-align: center;
+        color:white;
+        font-family: "Montserrat Subrayada", sans-serif;
+    
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+        justify-content:space-around;
+    }
+
+
+
+
+
+    .sidebarartworks{
+        display: none;
+    }
+    .extra{
+        display:none;
+    }
+    .container{
+        overflow:hidden;
+    }
+
+
+
+
+    .homecontainer{
+        overflow:hidden;
+    }
+    .video1{
+        display:none;
+    }
+}
