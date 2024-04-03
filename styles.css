@@ -266,8 +266,8 @@ video {
         grid-column: 3 / 6;
         grid-row: 6 / 8;
         scale: 80%;
-        height: 500px;
-        width: 550px;
+        height: 600px;
+        width: 650px;
         background-size: cover;
         background-image: url(/about/jimpunkaboutpic.png);
         box-shadow: 20px 20px 5px 5px rgba(0, 0, 0, 0.407);
@@ -281,7 +281,7 @@ video {
     }
 
 
-    
+
     .sidebarartworks{
         display: none;
     }
